@@ -26,7 +26,6 @@ newsapi-python==0.2.6
 numpy==1.20.3
 packaging==20.9
 pandas==1.2.4
-PyAudio @ file:///C:/Users/91945/Downloads/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 pyinstaller-hooks-contrib==2021.1
 pyjsparser==2.7.1
 pyparsing==2.4.7
@@ -46,10 +45,8 @@ scipy==1.7.0
 six==1.16.0
 sklearn==0.0
 soupsieve==2.2.1
-SpeechRecognition==3.8.1
 threadpoolctl==2.1.0
 tzlocal==2.1
 urllib3==1.26.4
 virtualenv==20.4.7
 Werkzeug==2.0.1
-wikipedia==1.4.0
