@@ -27,7 +27,7 @@ def load_saved_artifacts():
     global  __data_columns
     global __locations
 
-    with open("columns.json","rb") as f:
+    with open("columns.json","r") as f:
         __data_columns=json.load(f)['data_columns']
         __locations=__data_columns[3:] # first 3 columns are sqft, bath, bhk
 
@@ -38,14 +38,16 @@ def load_saved_artifacts():
     # print("loading saved artifacts...done")
 
 def get_location_names():
+    # print(__locations)
     return __locations
 
 if __name__ == '__main__':
     load_saved_artifacts()
     # print(get_location_names())
+    print(get_location_names())
 
     #Prediction
     # print(get_estimated_price('1st Phase JP Nagar',1000, 3, 3))
-    print(get_estimated_price('1st Phase JP Nagar', 1000, 2, 2))
-    print(get_estimated_price('Kalhalli', 1000, 2, 2)) # other location
-    print(get_estimated_price('Ejipura', 1000, 2, 2))  # other location
+    # print(get_estimated_price('1st Phase JP Nagar', 1000, 2, 2))
+    # print(get_estimated_price('Kalhalli', 1000, 2, 2)) # other location
+    # print(get_estimated_price('Ejipura', 1000, 2, 2))  # other location

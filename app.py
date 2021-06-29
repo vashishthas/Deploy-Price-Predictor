@@ -3,7 +3,6 @@ import util
 
 app=Flask(__name__)
  
-
 @app.route('/hello')
 def hello():
     return 'Hi!'
@@ -23,7 +22,7 @@ def predict_home_price():
     bhk = int(request.form['bhk'])
     bath = int(request.form['bath'])
 
-    print(util.get_estimated_price(location,sqft,bhk,bath))
+    # print(util.get_estimated_price(location,sqft,bhk,bath))
 
     response = jsonify({
         'estimated_price': util.get_estimated_price(location,sqft,bhk,bath)
